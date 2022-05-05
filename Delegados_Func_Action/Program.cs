@@ -27,11 +27,11 @@ namespace Delegados_Func_Action
             Suma sumalam = (x,y) => x+y;
             Console.WriteLine($"Delegado Lambda:{sumalam(3,3)}");
 
-            //Ejemplo de como utilizar Func
+            //Ejemplo de como utilizar Func con expresión lambda
             Func<int, int, int> funclam = (x,y) => x+y;
             Console.WriteLine($"Func Lambda:{funclam(4, 20)}");
 
-            //Ejemplo de Action
+            //Ejemplo de Action con expresión lambda
             Action<int, int> actionlam = (x, y) => { Console.WriteLine($"Action Lambda:{x + y}"); };
             actionlam(1, 10);
 
